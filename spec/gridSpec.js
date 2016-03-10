@@ -25,4 +25,8 @@ describe('Grid', function() {
   it('should return the number 2 for position 0,8', function() {
     expect(grid.position(0, 8)).toEqual(2);
   });
+
+  it('should return an empty cell for position 0,0', function() {
+    expect(grid.position(0, 0)).toEqual(' ');
+  });
 });
