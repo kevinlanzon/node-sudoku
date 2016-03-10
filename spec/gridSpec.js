@@ -14,7 +14,15 @@ describe('Grid', function() {
 
  it('should be able to print the grid with blank spaces', function(){
     var actual = grid.print();
-    var expected = ' ,5, , , , , , ,2,\n ,5, , , , , , ,2,\n ,5, , , , , , ,2,\n ,5, , , , , , ,2,\n ,5, , , , , , ,2,\n ,5, , , , , , ,2,\n ,5, , , , , , ,2,\n ,5, , , , , , ,2,\n ,5, , , , , , , ,\n';
+    var expected = ' ,5, , , , , , ,2,\n' +
+                   ' ,5, , , , , , ,2,\n' +
+                   ' ,5, , , , , , ,2,\n' +
+                   ' ,5, , , , , , ,2,\n' +
+                   ' ,5, , , , , , ,2,\n' +
+                   ' ,5, , , , , , ,2,\n' +
+                   ' ,5, , , , , , ,2,\n' +
+                   ' ,5, , , , , , ,2,\n' +
+                   ' ,5, , , , , , , ,\n';
     expect(actual).toEqual(expected);
   });
 
