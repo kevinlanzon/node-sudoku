@@ -12,9 +12,9 @@ describe('Grid', function() {
     expect(grid.numberOfRows()).toEqual(9);
   });
 
-  it('should be able to print the grid with blank spaces', function() {
+ it('should be able to print the grid with blank spaces', function(){
     var actual = grid.print();
-    var expected = ' , , , , , , , , ,\n , , , , , , , , ,\n , , , , , , , , ,\n , , , , , , , , ,\n , , , , , , , , ,\n , , , , , , , , ,\n , , , , , , , , ,\n , , , , , , , , ,\n , , , , , , , , ,\n';
+    var expected = ' ,5, , , , , , ,2,\n ,5, , , , , , ,2,\n ,5, , , , , , ,2,\n ,5, , , , , , ,2,\n ,5, , , , , , ,2,\n ,5, , , , , , ,2,\n ,5, , , , , , ,2,\n ,5, , , , , , ,2,\n ,5, , , , , , , ,\n';
     expect(actual).toEqual(expected);
   });
 

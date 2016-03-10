@@ -20,10 +20,10 @@ Grid.prototype.numberOfRows = function() {
 
 Grid.prototype.print = function() {
   var acc = '';
-  for (var i = 0; i < this.numberOfRows(); i++) {
-    for (var j = 0; j < this.numberOfColumns(); j++) {
-      var string = ' ,';
-      acc = acc.concat(string);
+  for (var row = 0; row < this.numberOfRows(); row++) {
+    for ( var col = 0; col < this.numberOfColumns(); col++) {
+      var string = ',';
+      acc = acc.concat(this.position(row, col), string);
     }
     acc = acc.concat('\n');
   }
