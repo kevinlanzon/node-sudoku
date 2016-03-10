@@ -29,4 +29,16 @@ describe('Grid', function() {
   it('should return an empty cell for position 0,0', function() {
     expect(grid.position(0, 0)).toEqual(' ');
   });
+
+  it('should throw an error for position 0,9', function() {
+    expect(function() {
+      grid.position(0,9);
+    }).toThrow(Error('Cell does not exist'));
+  });
+
+  it('should throw an error for position 0,-1', function() {
+    expect(function() {
+      grid.position(0,-1);
+    }).toThrow(Error('Cell does not exist'));
+  });
 });

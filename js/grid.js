@@ -23,6 +23,9 @@ Grid.prototype.print = function() {
 };
 
 Grid.prototype.position = function(row, col) {
+  if (this.numberOfColumns() <= col || col < 0) {
+    throw new Error('Cell does not exist');
+  }
   return this.cells[col];
 };
 
