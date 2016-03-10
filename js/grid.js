@@ -1,5 +1,5 @@
 function Grid() {
-
+  this.cells = [' ',5,' ',' ',' ',' ',' ',' ', ];
 }
 
 Grid.prototype.numberOfColumns = function() {
@@ -20,6 +20,10 @@ Grid.prototype.print = function() {
     acc = acc.concat('\n');
   }
   return acc;
+};
+
+Grid.prototype.position = function(row, col) {
+  return this.cells[col];
 };
 
 module.exports = Grid;

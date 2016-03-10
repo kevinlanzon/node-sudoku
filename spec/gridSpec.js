@@ -17,4 +17,8 @@ describe('Grid', function() {
     var expected = ' , , , , , , , , ,\n , , , , , , , , ,\n , , , , , , , , ,\n , , , , , , , , ,\n , , , , , , , , ,\n , , , , , , , , ,\n , , , , , , , , ,\n , , , , , , , , ,\n , , , , , , , , ,\n';
     expect(actual).toEqual(expected);
   });
+
+  it('should return the number 5 for position 0,1', function() {
+    expect(grid.position(0, 1)).toEqual(5);
+  });
 });
