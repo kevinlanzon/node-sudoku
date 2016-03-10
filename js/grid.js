@@ -19,10 +19,14 @@ Grid.prototype.numberOfRows = function() {
 };
 
 Grid.prototype.print = function() {
-  var acc = '';
-  for (var row = 0; row < this.numberOfRows(); row++) {
-    for ( var col = 0; col < this.numberOfColumns(); col++) {
-      var string = ',';
+  var acc = '',
+      row,
+      col,
+      string;
+
+  for (row = 0; row < this.numberOfRows(); row++) {
+    for (col = 0; col < this.numberOfColumns(); col++) {
+      string = ',';
       acc = acc.concat(this.position(row, col), string);
     }
     acc = acc.concat('\n');
