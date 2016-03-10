@@ -41,4 +41,8 @@ describe('Grid', function() {
       grid.position(0,-1);
     }).toThrow(Error('Cell does not exist'));
   });
+
+  it('should return an empty cell for position 8,8', function() {
+    expect(grid.position(8,8)).toEqual(' ');
+  });
 });
