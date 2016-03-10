@@ -45,4 +45,16 @@ describe('Grid', function() {
   it('should return an empty cell for position 8,8', function() {
     expect(grid.position(8,8)).toEqual(' ');
   });
+
+  it('should throw an error for position 9,0', function() {
+    expect(function() {
+      grid.position(9,0);
+    }).toThrow(Error('Cell does not exist'));
+  });
+
+  it('should throw an error for position -1,0', function() {
+    expect(function() {
+      grid.position(-1,0);
+    }).toThrow(Error('Cell does not exist'));
+  });
 });

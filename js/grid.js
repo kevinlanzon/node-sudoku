@@ -31,8 +31,8 @@ Grid.prototype.print = function() {
 };
 
 Grid.prototype.position = function(row, col) {
-  if (this.numberOfColumns() <= col || col < 0) {
-    throw new Error('Cell does not exist');
+  if (this.numberOfColumns() <= col || col < 0 || this.numberOfRows() <= row || row < 0) {
+  throw new Error('Cell does not exist');
   }
   return this.cells[row][col];
 };
