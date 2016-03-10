@@ -11,4 +11,10 @@ describe('Grid', function() {
   it('should have 9 rows', function() {
     expect(grid.numberOfRows()).toEqual(9);
   });
+
+  it('should be able to print the grid with blank spaces', function() {
+    var actual = grid.print();
+    var expected = ' , , , , , , , , ,\n , , , , , , , , ,\n , , , , , , , , ,\n , , , , , , , , ,\n , , , , , , , , ,\n , , , , , , , , ,\n , , , , , , , , ,\n , , , , , , , , ,\n , , , , , , , , ,\n';
+    expect(actual).toEqual(expected);
+  });
 });

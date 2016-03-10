@@ -18,7 +18,7 @@ module.exports = function(grunt) {
         extensions: 'js',
         specNameMatcher: 'spec'
       },
-      all: ['spec/']
+      all: ['spec/ --verbose']
     }
   });
 
