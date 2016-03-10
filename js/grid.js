@@ -1,5 +1,5 @@
 function Grid() {
-  this.cells = [' ',5,' ',' ',' ',' ',' ',' ', ];
+  this.cells = [' ',5,' ',' ',' ',' ',' ',' ',2];
 }
 
 Grid.prototype.numberOfColumns = function() {

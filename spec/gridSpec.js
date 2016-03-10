@@ -21,4 +21,8 @@ describe('Grid', function() {
   it('should return the number 5 for position 0,1', function() {
     expect(grid.position(0, 1)).toEqual(5);
   });
+
+  it('should return the number 2 for position 0,8', function() {
+    expect(grid.position(0, 8)).toEqual(2);
+  });
 });
